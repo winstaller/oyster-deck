@@ -142,6 +142,10 @@
   .bul li { font-size: 22px; line-height: 1.4; color: var(--text-2); padding-left: 26px; position: relative; font-weight: 430; }
   .bul li::before { content: ""; position: absolute; left: 0; top: 12px; width: 10px; height: 10px; border-radius: 3px; background: var(--lavender); }
   .bul li b { color: var(--text); font-weight: 560; }
+  .kv { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 16px; color: var(--text-2); }
+  .kv b { font-family: var(--mono); font-size: 18px; color: var(--text); font-weight: 500; white-space: nowrap; }
+  .kv.total { border-bottom: none; padding-top: 14px; color: var(--text); font-weight: 560; }
+  .kv.total b { color: var(--primary); font-size: 22px; }
   @media print {
     body { overflow: visible; background: var(--bg); }
     .viewport { position: static; display: block; }
@@ -194,7 +198,7 @@
 </svg></div>
   <div class="grow">
     <h1>Oyster is software that configures and quotes <span class="g">enterprise hardware</span> for IT resellers</h1>
-    <p class="sub" style="margin-top:26px;">It turns a customer requirement into a bill of materials that the vendor's own configurator accepts, plus the quote and the diagram. IBM and HPE are live. First customer: Pedab, a Nordic distributor with 400 reseller partners. Raising <b>12 MSEK</b> seed.</p>
+    <p class="sub" style="margin-top:26px;">IBM and HPE live. First customer signed. Raising <b>12 MSEK</b> seed.</p>
   </div>
   <div class="foot"><span>Axel Sundelöf · axel.sundelof@oyster.tech · September 2026</span><span>Confidential</span></div>
 </section>
@@ -234,19 +238,17 @@
   <div class="grow">
     <div class="cols" style="grid-template-columns: 1.25fr 1fr; gap: 40px; align-items: center;">
       <ul class="bul">
-        <li>The average solution architect covers <b>one to two vendors</b></li>
-        <li>The average reseller carries <b>five vendors</b></li>
-        <li>A request outside the architect's vendors, or while he is busy, is <b>turned away</b></li>
-        <li>A senior architect costs <b>90 to 130k SEK a month</b>. Nobody hires a second one for a few deals a year</li>
-        <li>The lost deals are <b>never logged</b></li>
+        <li>A solution architect covers <b>one to two vendors</b></li>
+        <li>A reseller carries <b>five</b></li>
+        <li>Deals outside those vendors are <b>turned away</b></li>
+        <li>An architect costs <b>90 to 130k SEK a month</b></li>
       </ul>
       <div class="facts">
-        <div class="fact"><div class="n">2 hours</div><div class="d">per configuration today, by the one architect who can do it</div></div>
-        <div class="fact"><div class="n">5 minutes</div><div class="d">with Oyster, by anyone on the sales team</div></div>
-        <div class="fact"><div class="n">1–2 of 5</div><div class="d">vendor lines an architect can quote today</div></div>
+        <div class="fact"><div class="n">2 hours</div><div class="d">per configuration today</div></div>
+        <div class="fact"><div class="n">5 minutes</div><div class="d">with Oyster</div></div>
       </div>
     </div>
-    <div class="quote" style="margin-top:26px;">"AI assist means one engineer covers roughly five vendors."<span class="by">Marius Midtskogen, solution specialist, Pedab Norway. Said before we had shown him the product</span></div>
+    <div class="quote" style="margin-top:26px;">"AI assist means one engineer covers roughly five vendors."<span class="by">Marius Midtskogen, Pedab Norway</span></div>
   </div>
   <div class="foot"><span></span><span class="pageno"></span></div>
 </section>
@@ -282,19 +284,16 @@
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
   <div class="kicker">Solution</div>
-  <h2>You describe the deal. Oyster builds and validates the configuration.</h2>
+  <h2>Describe the deal. Oyster builds and validates the configuration.</h2>
   <div class="grow">
     <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
-      <div class="step"><div class="num">1 · You describe</div><div class="sn">"180 TB replicated across two sites, plus an ERP server"</div><div class="sd">A sentence, or the customer's tender document</div></div>
-      <div class="step"><div class="num">2 · Oyster builds</div><div class="sn">Asks the questions a specialist would, then drafts the full bill of materials</div><div class="sd">Every line checked against the vendor's own catalog and rules</div></div>
-      <div class="step"><div class="num">3 · You send</div><div class="sn">Vendor-native order file, branded quote, architecture diagram</div><div class="sd">Uploads into the vendor's configurator and passes</div></div>
+      <div class="step"><div class="num">1 · You describe</div><div class="sn">"180 TB replicated across two sites, plus an ERP server"</div></div>
+      <div class="step"><div class="num">2 · Oyster builds</div><div class="sn">Full bill of materials, checked against the vendor's own rules</div></div>
+      <div class="step"><div class="num">3 · You send</div><div class="sn">Vendor order file, branded quote, diagram</div></div>
     </div>
-    <div class="cols" style="margin-top:22px;">
-      <div class="card stat"><div class="n">minutes</div><div class="d">Instead of hours of senior engineer time</div></div>
-      <div class="card stat"><div class="n">5×</div><div class="d">Vendors one engineer can quote</div></div>
-    </div>
+    <p class="punch" style="margin-top:28px;">The output uploads into the vendor's configurator and <b>passes</b>.</p>
   </div>
-  <div class="foot"><span>Hard rule violations are blocked. Everything else is advice the engineer can overrule.</span><span class="pageno"></span></div>
+  <div class="foot"><span></span><span class="pageno"></span></div>
 </section>
 
 <!-- 4 readiness -->
@@ -328,20 +327,20 @@
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
   <div class="kicker">How far we have come</div>
-  <h2>We learned how to add a vendor on IBM. Now it is a process that takes weeks.</h2>
+  <h2>We learned how to add a vendor on IBM. Now it takes weeks.</h2>
   <div class="grow">
     <div class="tl">
-      <div class="tlrow"><div class="tlk">IBM Power and FlashSystem: rules engine, capture method and validation loop built from scratch</div><div class="tlbar"><i style="width:100%"></i></div><div class="tlv">14 months</div><div class="tls"><span class="chip ok">Live</span></div></div>
-      <div class="tlrow"><div class="tlk">HPE ProLiant, Alletra, MSA, SimpliVity: the same process, second time</div><div class="tlbar"><i style="width:3.5%"></i></div><div class="tlv">2 weeks</div><div class="tls"><span class="chip ok">Live</span></div></div>
-      <div class="tlrow"><div class="tlk">Huawei, xFusion, Dell, Lenovo: captured in priority order as customers ask</div><div class="tlbar"><i class="ghost" style="width:5%"></i></div><div class="tlv">weeks each</div><div class="tls"><span class="chip plan">Next</span></div></div>
+      <div class="tlrow"><div class="tlk">IBM</div><div class="tlbar"><i style="width:100%"></i></div><div class="tlv">14 months</div><div class="tls"><span class="chip ok">Live</span></div></div>
+      <div class="tlrow"><div class="tlk">HPE</div><div class="tlbar"><i style="width:3.5%"></i></div><div class="tlv">2 weeks</div><div class="tls"><span class="chip ok">Live</span></div></div>
+      <div class="tlrow"><div class="tlk">Huawei, xFusion, Dell, Lenovo</div><div class="tlbar"><i class="ghost" style="width:5%"></i></div><div class="tlv">weeks each</div><div class="tls"><span class="chip plan">Next</span></div></div>
     </div>
     <div class="cols3" style="margin-top:26px;">
-      <div class="card stat"><div class="n">99<small>%</small></div><div class="d">Of configurations pass the vendor's own configurator first time</div></div>
-      <div class="card stat"><div class="n">110k</div><div class="d">HPE option codes captured across 121 models in those two weeks</div></div>
-      <div class="card stat"><div class="n">2</div><div class="d">Vendor lines live. The seed round funds the next four</div></div>
+      <div class="card stat"><div class="n">99<small>%</small></div><div class="d">Pass the vendor's configurator first time</div></div>
+      <div class="card stat"><div class="n">110k</div><div class="d">HPE option codes, 121 models</div></div>
+      <div class="card stat"><div class="n">0</div><div class="d">Outside capital so far</div></div>
     </div>
   </div>
-  <div class="foot"><span>Every code and rule is read from the vendor's own tool, never typed from memory, so each new vendor is captured the same way.</span><span class="pageno"></span></div>
+  <div class="foot"><span></span><span class="pageno"></span></div>
 </section>
 
 <!-- 5 partnership -->
@@ -374,24 +373,26 @@
   <!-- Center dot -->
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
-  <div class="kicker">The partnership</div>
-  <h2>Pedab built the IBM line with us, then became our first customer and our channel to 400 resellers</h2>
+  <div class="kicker">First customer</div>
+  <h2>Pedab has signed a three-year contract and sells Oyster to its 400 resellers</h2>
   <div class="grow">
-    <div class="story-tl">
-      <div class="beat"><div class="bw">June 2026</div><div class="bt">A Pedab solution specialist starts piloting on real IBM deals and reviews every output</div></div>
-      <div class="beat"><div class="bw">August</div><div class="bt">The head of Pedab's IBM business unit becomes our internal sponsor</div></div>
-      <div class="beat"><div class="bw">September</div><div class="bt">Pedab's CEO sees IBM's own configurator validate Oyster output</div></div>
-      <div class="beat on"><div class="bw">Agreed</div><div class="bt">First customer. 300,000 SEK for the full catalogue, a three-year seat contract with minimums stepping 8, 12, 16, and 25 percent revenue share on seats co-sold into its partner network</div></div>
-    </div>
-    <div class="chain" style="margin-top:22px;">
-      <div class="node"><div class="nl">Oyster</div><div class="nd">Builds the product. Captures the vendor lines Pedab carries.</div></div>
-      <div class="arrow">→</div>
-      <div class="node hub"><div class="nl">Pedab</div><div class="nd">1.9 bn SEK, nine countries. Uses Oyster itself, co-sells it to its partners and keeps 25 percent on those seats. Its specialists stamp configurations.</div></div>
-      <div class="arrow">→</div>
-      <div class="node"><div class="nl">400 reseller partners</div><div class="nd">Already buy their hardware from Pedab. Each engineer seat 6,500 SEK a month.</div></div>
+    <div class="cols" style="grid-template-columns: 1fr 1.15fr; gap: 22px;">
+      <div class="card" style="border-color: color-mix(in srgb, var(--success) 45%, transparent);">
+        <div class="cl" style="color: var(--success);">Signed · three years</div>
+        <div class="kv"><span>Catalogue</span><b>300,000 SEK</b></div>
+        <div class="kv"><span>Seats, minimum</span><b>8 → 12 → 16</b></div>
+        <div class="kv"><span>Seat price</span><b>5,000 SEK / month</b></div>
+        <div class="kv"><span>Co-selling</span><b>25% to Pedab</b></div>
+        <div class="kv total"><span>Contracted</span><b>2.5 MSEK</b></div>
+      </div>
+      <div class="chain" style="grid-template-columns: 1fr 34px 1fr; align-content: center;">
+        <div class="node hub"><div class="nl">Pedab</div><div class="nd">Nordic distributor, 1.9 bn SEK, nine countries. Co-built the IBM line with us since June.</div></div>
+        <div class="arrow">→</div>
+        <div class="node"><div class="nl">400 resellers</div><div class="nd">Already buy from Pedab. 6,500 SEK a seat.</div></div>
+      </div>
     </div>
   </div>
-  <div class="foot"><span>Non-exclusive. Seats attach to the reseller's workflow, so they survive any change in Pedab's vendor lines.</span><span class="pageno"></span></div>
+  <div class="foot"><span>Non-exclusive.</span><span class="pageno"></span></div>
 </section>
 
 <!-- 6 the 400 -->
@@ -424,28 +425,28 @@
   <!-- Center dot -->
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
-  <div class="kicker">What 400 partners are worth</div>
-  <h2>One distributor's partner base is 78 MSEK of seats. The plan needs 18 percent of it.</h2>
+  <div class="kicker">What 400 resellers are worth</div>
+  <h2>78 MSEK of seats in one partner base. The plan needs 18 percent of it.</h2>
   <div class="grow">
     <div class="cols" style="grid-template-columns: 1.2fr 1fr; gap: 22px;">
       <table class="t">
-        <thead><tr><th>Partner tier</th><th>Profile</th><th class="num">Partners</th><th class="num">Seats each</th><th class="num">Seats</th></tr></thead>
+        <thead><tr><th>Tier</th><th>Engineers</th><th class="num">Resellers</th><th class="num">Seats</th></tr></thead>
         <tbody>
-          <tr><td class="k">A</td><td>8+ engineers, own configuration desk</td><td class="num">32</td><td class="num">8</td><td class="num">256</td></tr>
-          <tr class="hi"><td class="k">B</td><td>2 to 7 engineers, 2 to 4 vendor lines. The wedge</td><td class="num">128</td><td class="num">3</td><td class="num">384</td></tr>
-          <tr><td class="k">C</td><td>0 to 1 engineer, leans on Pedab presales</td><td class="num">240</td><td class="num">1.5</td><td class="num">360</td></tr>
-          <tr class="total"><td class="k">Total</td><td>at 6,500 SEK a seat, list</td><td class="num">400</td><td class="num"></td><td class="num">1,000</td></tr>
+          <tr><td class="k">A</td><td>8 or more</td><td class="num">32</td><td class="num">256</td></tr>
+          <tr class="hi"><td class="k">B</td><td>2 to 7</td><td class="num">128</td><td class="num">384</td></tr>
+          <tr><td class="k">C</td><td>0 to 1</td><td class="num">240</td><td class="num">360</td></tr>
+          <tr class="total"><td class="k">Total</td><td>78 MSEK ARR at list</td><td class="num">400</td><td class="num">1,000</td></tr>
         </tbody>
       </table>
       <div class="ladder">
-        <div class="rung"><div class="rp">10%</div><div class="rs">100 seats</div><div class="ra">7.8 MSEK ARR</div></div>
-        <div class="rung on"><div class="rp">18%</div><div class="rs">180 seats</div><div class="ra">Plan, end of year 2</div></div>
-        <div class="rung"><div class="rp">36%</div><div class="rs">360 seats</div><div class="ra">Plan, end of year 3</div></div>
-        <div class="rung"><div class="rp">50%</div><div class="rs">500 seats</div><div class="ra">39 MSEK ARR</div></div>
+        <div class="rung"><div class="rp">10%</div><div class="rs">100 seats</div><div class="ra">7.8 MSEK</div></div>
+        <div class="rung on"><div class="rp">18%</div><div class="rs">180 seats</div><div class="ra">Plan, year 2</div></div>
+        <div class="rung"><div class="rp">36%</div><div class="rs">360 seats</div><div class="ra">Plan, year 3</div></div>
+        <div class="rung"><div class="rp">50%</div><div class="rs">500 seats</div><div class="ra">39 MSEK</div></div>
       </div>
     </div>
   </div>
-  <div class="foot"><span>Beyond Pedab: about 4,500 engineer seats across Nordic resellers, and vendor tools are identical worldwide, so captured lines travel. Tier split is our estimate; Pedab's account list is the first thing the framework asks for.</span><span class="pageno"></span></div>
+  <div class="foot"><span>Beyond Pedab: about 4,500 seats in the Nordics. Vendor tools are the same worldwide.</span><span class="pageno"></span></div>
 </section>
 
 <!-- 7 why now -->
@@ -482,12 +483,12 @@
   <h2>Three things changed in 2026</h2>
   <div class="grow">
     <div class="cols3">
-      <div class="card"><div class="cl acc">Channel</div><h3>IBM and HPE cut to two distributors each</h3><p>Resellers lose the distributor presales desk they leaned on. Pedab needs a second act, and this is it.</p></div>
-      <div class="card"><div class="cl acc">Technology</div><h3>Capturing a vendor catalog went from years to weeks</h3><p>Frontier models read the configurator; deterministic rules do the checking.</p></div>
-      <div class="card"><div class="cl acc">Category</div><h3>US resellers already pay for a bespoke version</h3><p>Quote cycle from 1 to 2 days to 15 minutes at one reseller, 49k USD in year one.</p></div>
+      <div class="card"><div class="cl acc">Channel</div><h3>IBM and HPE cut to two distributors each. Resellers lose their presales desk.</h3></div>
+      <div class="card"><div class="cl acc">Technology</div><h3>Capturing a vendor catalog went from years to weeks.</h3></div>
+      <div class="card"><div class="cl acc">Category</div><h3>US resellers already pay 49k USD a year for a bespoke version.</h3></div>
     </div>
   </div>
-  <div class="foot"><span>The engineers who hold this knowledge are retiring as franchises move, so the time to capture it is now.</span><span class="pageno"></span></div>
+  <div class="foot"><span></span><span class="pageno"></span></div>
 </section>
 
 <!-- 8 business model -->
@@ -525,13 +526,10 @@
   <div class="grow">
     <div class="cols3">
       <div class="card stat"><div class="n">6,500<small>SEK / seat / mo</small></div><div class="d">5 to 7 percent of the engineer it multiplies</div></div>
-      <div class="card stat"><div class="n">86<small>%</small></div><div class="d">Gross margin with inference as cost of goods</div></div>
-      <div class="card stat"><div class="n">300k<small>SEK</small></div><div class="d">Catalogue fee. Pedab pays it first; new vendor lines are captured at customers' request</div></div>
+      <div class="card stat"><div class="n">86<small>%</small></div><div class="d">Gross margin</div></div>
+      <div class="card stat"><div class="n">25<small>%</small></div><div class="d">To the distributor that co-sells</div></div>
     </div>
-    <div class="cols" style="margin-top:22px;">
-      <div class="card"><div class="cl">Channel</div><p>Distributors co-sell into their partner networks and keep 25 percent. A second distributor in another geography from year two. Quoting software overall is a 7 billion USD category by 2030, and none of it validates hardware physics.</p></div>
-      <div class="card"><div class="cl">Marginal cost</div><p>The sixth reseller on a captured line costs us about 48,000 SEK a year in inference. The bespoke alternative costs the reseller 49,000 USD.</p></div>
-    </div>
+    <p class="punch" style="margin-top:28px;">The sixth reseller on a captured line costs us <b>48,000 SEK a year</b>. The bespoke alternative costs the reseller 49,000 USD.</p>
   </div>
   <div class="foot"><span></span><span class="pageno"></span></div>
 </section>
@@ -609,7 +607,7 @@
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
   <div class="kicker">The ask</div>
-  <h2>12 MSEK takes Oyster to break-even. The base case is worth 170 to 270 MSEK at exit.</h2>
+  <h2>12 MSEK to break-even. Base case worth 170 to 270 MSEK at exit.</h2>
   <div class="grow">
     <div class="cols" style="grid-template-columns: 1.15fr 1fr; gap: 22px;">
       <div class="card" style="padding-bottom:16px;">
@@ -633,19 +631,19 @@
             <text x="125" y="202" text-anchor="middle">Year 1</text><text x="285" y="202" text-anchor="middle">Year 2</text><text x="445" y="202" text-anchor="middle">Year 3</text>
           </g>
         </svg>
-        <div class="legend" style="margin-top:6px;"><span><i style="background:linear-gradient(135deg,#B383C9,#8ACEFE)"></i>Base, 36% of Pedab's partners by year 3</span><span><i style="background:#3F3F46"></i>Ambitious</span></div>
+        <div class="legend" style="margin-top:6px;"><span><i style="background:linear-gradient(135deg,#B383C9,#8ACEFE)"></i>Base</span><span><i style="background:#3F3F46"></i>Ambitious</span></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;">
-        <div class="card stat"><div class="n">Y3 Q2</div><div class="d">Cash-flow break-even at about 310 seats. No second round needed in the base case</div></div>
+        <div class="card stat"><div class="n">Y3 Q2</div><div class="d">Break-even, about 310 seats. No second round in the base case</div></div>
         <div class="card"><div class="cl">Use of funds, 24 months</div>
           <div class="bar" style="margin:10px 0 8px"><i style="width:51%;background:#B383C9"></i><i style="width:31%;background:#8ACEFE"></i><i style="width:13%;background:#3F3F46"></i><i style="width:5%;background:#71717A"></i></div>
           <div class="legend"><span><i style="background:#B383C9"></i>Hires <b>51%</b></span><span><i style="background:#8ACEFE"></i>Founders <b>31%</b></span><span><i style="background:#3F3F46"></i>Overhead <b>13%</b></span><span><i style="background:#71717A"></i>Inference <b>5%</b></span></div>
         </div>
-        <div class="card"><p>Vertical SaaS changed hands at 7 to 8.5 times revenue in 2025. At 5 to 8 times, year-three base ARR is <b>170 to 270 MSEK</b>; the ambitious case is 300 to 480.</p></div>
+        <div class="card"><p>Vertical SaaS sold at 7 to 8.5 times revenue in 2025. At 5 to 8 times: <b>170 to 270 MSEK</b> base, 300 to 480 ambitious.</p></div>
       </div>
     </div>
   </div>
-  <div class="foot"><span>Looking for a lead. Pulsen, the family group that owns Pedab, is a parallel conversation at their level.</span><span class="pageno"></span></div>
+  <div class="foot"><span>Looking for a lead.</span><span class="pageno"></span></div>
 </section>
 
 </div></div>
