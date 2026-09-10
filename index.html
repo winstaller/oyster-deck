@@ -148,6 +148,15 @@
   .kv.total b { color: var(--primary); font-size: 22px; }
   .quote.big { font-size: 28px; line-height: 1.4; padding: 10px 0 10px 26px; max-width: 1000px; }
   .quote.big .by { font-size: 16px; margin-top: 14px; color: var(--text-2); }
+  .path { display: flex; flex-direction: column; gap: 12px; }
+  .prow { display: grid; grid-template-columns: 250px 1fr 150px 170px; gap: 18px; align-items: center; }
+  .prow .pk { font-size: 18px; font-weight: 560; color: var(--text); }
+  .prow .pbar { height: 16px; border-radius: 8px; background: var(--subtle); overflow: hidden; }
+  .prow .pbar i { display: block; height: 100%; background: var(--border-strong); border-radius: 8px; min-width: 16px; }
+  .prow.on .pbar i { background: var(--nacre); }
+  .prow .pv { font-family: var(--mono); font-size: 18px; color: var(--primary); text-align: right; white-space: nowrap; }
+  .prow .pa { font-size: 15px; color: var(--text-2); text-align: right; white-space: nowrap; }
+  .prow.on .pk, .prow.on .pa { color: var(--text); }
   @media print {
     body { overflow: visible; background: var(--bg); }
     .viewport { position: static; display: block; }
@@ -397,7 +406,7 @@
   <div class="foot"><span>Non-exclusive.</span><span class="pageno"></span></div>
 </section>
 
-<!-- 6 the 400 -->
+<!-- 6 path to 100 MUSD -->
 <section class="slide">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -427,28 +436,22 @@
   <!-- Center dot -->
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
-  <div class="kicker">What 400 resellers are worth</div>
-  <h2>78 MSEK of seats in one partner base. The plan needs 18 percent of it.</h2>
+  <div class="kicker">Path to 100 MUSD</div>
+  <h2>100 MUSD is 13,000 seats. Europe has about 50,000.</h2>
   <div class="grow">
-    <div class="cols" style="grid-template-columns: 1.2fr 1fr; gap: 22px;">
-      <table class="t">
-        <thead><tr><th>Tier</th><th>Engineers</th><th class="num">Resellers</th><th class="num">Seats</th></tr></thead>
-        <tbody>
-          <tr><td class="k">A</td><td>8 or more</td><td class="num">32</td><td class="num">256</td></tr>
-          <tr class="hi"><td class="k">B</td><td>2 to 7</td><td class="num">128</td><td class="num">384</td></tr>
-          <tr><td class="k">C</td><td>0 to 1</td><td class="num">240</td><td class="num">360</td></tr>
-          <tr class="total"><td class="k">Total</td><td>78 MSEK ARR at list</td><td class="num">400</td><td class="num">1,000</td></tr>
-        </tbody>
-      </table>
-      <div class="ladder">
-        <div class="rung"><div class="rp">10%</div><div class="rs">100 seats</div><div class="ra">7.8 MSEK</div></div>
-        <div class="rung on"><div class="rp">18%</div><div class="rs">180 seats</div><div class="ra">Plan, year 2</div></div>
-        <div class="rung"><div class="rp">36%</div><div class="rs">360 seats</div><div class="ra">Plan, year 3</div></div>
-        <div class="rung"><div class="rp">50%</div><div class="rs">500 seats</div><div class="ra">39 MSEK</div></div>
-      </div>
+    <div class="path">
+      <div class="prow"><div class="pk">Pedab's 400 resellers</div><div class="pbar"><i style="width:2%"></i></div><div class="pv">1,000 seats</div><div class="pa">78 MSEK</div></div>
+      <div class="prow"><div class="pk">Nordics</div><div class="pbar"><i style="width:9%"></i></div><div class="pv">4,500 seats</div><div class="pa">350 MSEK</div></div>
+      <div class="prow on"><div class="pk">100 MUSD</div><div class="pbar"><i style="width:26%"></i></div><div class="pv">13,000 seats</div><div class="pa">A quarter of Europe</div></div>
+      <div class="prow"><div class="pk">Europe</div><div class="pbar"><i style="width:100%"></i></div><div class="pv">50,000 seats</div><div class="pa">4 bn SEK</div></div>
+    </div>
+    <div class="cols3" style="margin-top:26px;">
+      <div class="card stat"><div class="n">18<small>%</small></div><div class="d">Of Pedab's resellers is the plan for year 2: 180 seats</div></div>
+      <div class="card stat"><div class="n">1</div><div class="d">More distributor per market. Same catalogues, same product</div></div>
+      <div class="card stat"><div class="n">0</div><div class="d">Rebuilds. The vendor tools are identical in every country</div></div>
     </div>
   </div>
-  <div class="foot"><span>Nordics: about 4,500 seats, 350 MSEK. Europe: about 50,000 seats, 4 bn SEK at list. The vendor tools are the same everywhere, so a captured line sells across all of it.</span><span class="pageno"></span></div>
+  <div class="foot"><span>Seats at 6,500 SEK a month list. Reseller counts are our estimate from headcount and channel benchmarks.</span><span class="pageno"></span></div>
 </section>
 
 <!-- 7 why now -->
