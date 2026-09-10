@@ -138,6 +138,10 @@
   .rung .rp { font-family: var(--mono); font-size: 24px; color: var(--primary); font-variant-numeric: tabular-nums; }
   .rung .rs { font-size: 16px; color: var(--text); font-weight: 560; }
   .rung .ra { font-size: 14px; color: var(--text-2); text-align: right; }
+  .bul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .bul li { font-size: 22px; line-height: 1.4; color: var(--text-2); padding-left: 26px; position: relative; font-weight: 430; }
+  .bul li::before { content: ""; position: absolute; left: 0; top: 12px; width: 10px; height: 10px; border-radius: 3px; background: var(--lavender); }
+  .bul li b { color: var(--text); font-weight: 560; }
   @media print {
     body { overflow: visible; background: var(--bg); }
     .viewport { position: static; display: block; }
@@ -226,19 +230,20 @@
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
   <div class="kicker">Problem</div>
-  <h2>A reseller loses the deal because the one person who could quote it is not available</h2>
+  <h2>Resellers lose deals because their engineers do not have the bandwidth</h2>
   <div class="grow">
     <div class="cols" style="grid-template-columns: 1.25fr 1fr; gap: 40px; align-items: center;">
-      <div class="story">
-        <p>A customer asks for 180 TB of storage across two sites and a server for their ERP.</p>
-        <p>The reseller has one engineer who can configure that. He is deep in one vendor, and he is booked for the week.</p>
-        <p>The seller says "we will come back to you". The customer's second call goes to a competitor.</p>
-        <p class="hl">Nobody writes it down. This happens every week, at every reseller.</p>
-      </div>
+      <ul class="bul">
+        <li>The average solution architect covers <b>one to two vendors</b></li>
+        <li>The average reseller carries <b>five vendors</b></li>
+        <li>A request outside the architect's vendors, or while he is busy, is <b>turned away</b></li>
+        <li>A senior architect costs <b>90 to 130k SEK a month</b>. Nobody hires a second one for a few deals a year</li>
+        <li>The lost deals are <b>never logged</b></li>
+      </ul>
       <div class="facts">
-        <div class="fact"><div class="n">hours</div><div class="d">of a senior engineer's time per configuration, 140 part numbers the vendor's system must accept</div></div>
-        <div class="fact"><div class="n">1 of 2–4</div><div class="d">vendor lines each engineer knows. Deals on the others are turned away</div></div>
-        <div class="fact"><div class="n">90–130k</div><div class="d">SEK a month for that engineer. Nobody hires a second one for a few deals a year</div></div>
+        <div class="fact"><div class="n">2 hours</div><div class="d">per configuration today, by the one architect who can do it</div></div>
+        <div class="fact"><div class="n">5 minutes</div><div class="d">with Oyster, by anyone on the sales team</div></div>
+        <div class="fact"><div class="n">1–2 of 5</div><div class="d">vendor lines an architect can quote today</div></div>
       </div>
     </div>
     <div class="quote" style="margin-top:26px;">"AI assist means one engineer covers roughly five vendors."<span class="by">Marius Midtskogen, solution specialist, Pedab Norway. Said before we had shown him the product</span></div>
