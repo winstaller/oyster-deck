@@ -209,12 +209,57 @@
 </svg></div>
   <div class="grow">
     <h1>Oyster is software that configures and quotes <span class="g">enterprise hardware</span> for IT resellers</h1>
-    <p class="sub" style="margin-top:26px;">IBM and HPE live. Forty users signed up or onboarding. Distributor contract in negotiation. Raising <b>12 MSEK</b> seed.</p>
+    <p class="sub" style="margin-top:26px;">The first external user loaded a file into HPE's configurator <b>19 minutes</b> after signing up. IBM and HPE live. Raising <b>12 MSEK</b> seed.</p>
   </div>
   <div class="foot"><span>Axel Sundelöf · axel.sundelof@oyster.tech · October 2026</span><span>Confidential</span></div>
 </section>
 
-<!-- 2 problem -->
+<section class="slide">
+  <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B383C9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D9D9D9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8ACEFE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer diamond -->
+  <path d="M 128 40 L 216 128 L 128 216 L 40 128 Z" 
+        fill="none" 
+        stroke="url(#gradient)" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Inner diamond -->
+  <path d="M 128 60 L 196 128 L 128 196 L 60 128 Z" 
+        fill="none" 
+        stroke="url(#gradient)" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Center dot -->
+  <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
+</svg><span>Oyster</span></div>
+  <div class="kicker">Traction</div>
+  <h2>Forty users in four weeks, and the first one had a file in HPE's configurator nineteen minutes after signing up</h2>
+  <div class="grow">
+    <div class="cols3">
+      <div class="card stat"><div class="n">40</div><div class="d">Users signed up or onboarding since the doors opened on 29 September, five countries</div></div>
+      <div class="card stat"><div class="n">19<small>min</small></div><div class="d">First external user: signup to a configuration loaded in HPE OCA</div></div>
+      <div class="card stat"><div class="n">99<small>%</small></div><div class="d">Pass the vendor's configurator first time</div></div>
+    </div>
+    <div class="cols3" style="margin-top:18px;">
+      <div class="card stat"><div class="n">100<small>+</small></div><div class="d">Presales engineers at some 60 HPE resellers in 12 countries approached</div></div>
+      <div class="card stat"><div class="n">25</div><div class="d">Production releases in October, each from something a user hit</div></div>
+      <div class="card stat"><div class="n">0</div><div class="d">Outside capital so far. Three founders, all still employed elsewhere</div></div>
+    </div>
+  </div>
+  <div class="foot"><span></span><span class="pageno"></span></div>
+</section>
+
 <section class="slide">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -245,10 +290,11 @@
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
   <div class="kicker">Problem</div>
-  <h2>Resellers lose deals because their engineers do not have the bandwidth</h2>
+  <h2>Every vendor ships its own configurator, and only the one architect who knows it can drive it</h2>
   <div class="grow">
     <div class="cols" style="grid-template-columns: 1.25fr 1fr; gap: 40px; align-items: center;">
       <ul class="bul">
+        <li><b>HPE OCA, IBM eConfig:</b> an hour or two of clicking per server</li>
         <li>A solution architect covers <b>one to two vendors</b></li>
         <li>A reseller carries <b>five</b></li>
         <li>Deals outside those vendors are <b>turned away</b></li>
@@ -264,7 +310,6 @@
   <div class="foot"><span></span><span class="pageno"></span></div>
 </section>
 
-<!-- 3 solution -->
 <section class="slide">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -294,20 +339,19 @@
   <!-- Center dot -->
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
-  <div class="kicker">Solution</div>
-  <h2>Describe the deal. Oyster builds and validates the configuration.</h2>
+  <div class="kicker">Product</div>
+  <h2>Describe the deal. The file loads in the vendor's configurator.</h2>
   <div class="grow">
     <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
-      <div class="step"><div class="num">1 · You describe</div><div class="sn">"180 TB replicated across two sites, plus an ERP server"</div></div>
-      <div class="step"><div class="num">2 · Oyster builds</div><div class="sn">Full bill of materials, checked against the vendor's own rules</div></div>
-      <div class="step"><div class="num">3 · You send</div><div class="sn">Vendor order file, branded quote, diagram</div></div>
+      <div class="step"><div class="num">1 · The brief, verbatim</div><div class="sn">"A cheap server with two power supplies. iLO. Two NICs. 16 GB RAM. Windows Server 2025 Standard."</div><div class="sd">A reseller engineer's first request, 15 October. Oyster asked four questions back.</div></div>
+      <div class="step"><div class="num">2 · Oyster builds</div><div class="sn">DL320 Gen12, Xeon 6507P, memory, two 960 GB SSDs, boot kit, four-port 1GbE, two PSUs, licence, support</div><div class="sd">25 lines, every one checked against HPE's own rules. 19 minutes from signup.</div></div>
+      <div class="step"><div class="num">3 · The verdict</div><div class="sn">Loaded in HPE OCA</div><div class="sd">Twelve September test briefs through OCA: nine accepted with an HPE order reference, two correctly refused as unbuildable, one duplicate.</div></div>
     </div>
-    <p class="punch" style="margin-top:28px;">The output uploads into the vendor's configurator and <b>passes</b>. Works in the browser, or inside Claude and ChatGPT.</p>
+    <p class="punch" style="margin-top:28px;">Vendor order file, bill of materials, branded quote. <b>Works in the browser, or inside Claude and ChatGPT.</b></p>
   </div>
   <div class="foot"><span></span><span class="pageno"></span></div>
 </section>
 
-<!-- 4 readiness -->
 <section class="slide">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -337,25 +381,24 @@
   <!-- Center dot -->
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
-  <div class="kicker">How far we have come</div>
-  <h2>We learned how to add a vendor on IBM. Now it takes weeks.</h2>
+  <div class="kicker">Moat</div>
+  <h2>The rules are not in the model</h2>
   <div class="grow">
     <div class="tl">
       <div class="tlrow"><div class="tlk">IBM</div><div class="tlbar"><i style="width:100%"></i></div><div class="tlv">14 months</div><div class="tls"><span class="chip ok">Live</span></div></div>
       <div class="tlrow"><div class="tlk">HPE</div><div class="tlbar"><i style="width:3.5%"></i></div><div class="tlv">2 weeks</div><div class="tls"><span class="chip ok">Live</span></div></div>
       <div class="tlrow"><div class="tlk">Huawei, xFusion, Dell, Lenovo</div><div class="tlbar"><i class="ghost" style="width:5%"></i></div><div class="tlv">weeks each</div><div class="tls"><span class="chip plan">Next</span></div></div>
     </div>
-    <div class="cols4" style="margin-top:26px;">
-      <div class="card stat"><div class="n">99<small>%</small></div><div class="d">Pass the vendor's configurator first time</div></div>
-      <div class="card stat"><div class="n">110k</div><div class="d">HPE option codes, 135 models</div></div>
-      <div class="card stat"><div class="n">40</div><div class="d">Users signed up or onboarding, five countries</div></div>
-      <div class="card stat"><div class="n">0</div><div class="d">Outside capital so far</div></div>
+    <div class="cols3" style="margin-top:24px;">
+      <div class="card"><div class="cl acc">Captured catalogues</div><p><b>135 HPE chassis, 110,000 option codes, nine IBM Power machine types</b>, read from the vendors' own tools, not from documents.</p></div>
+      <div class="card"><div class="cl acc">Verified rules</div><p><b>4,800 vendor rules</b>, each proven in the vendor's configurator before it ships. A rule without a proof never reaches production.</p></div>
+      <div class="card"><div class="cl acc">Every deal adds rules</div><p>Built with practising solution architects, deal by deal. <b>25 releases in October</b> came from gaps users found.</p></div>
     </div>
+    <p class="punch" style="margin-top:22px;">When the next model ships, nothing changes: <b>the model picks options, code copies part numbers from the captured catalogue.</b></p>
   </div>
   <div class="foot"><span></span><span class="pageno"></span></div>
 </section>
 
-<!-- 5 partnership -->
 <section class="slide">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -385,7 +428,91 @@
   <!-- Center dot -->
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
-  <div class="kicker">Distributor pilot</div>
+  <div class="kicker">Why now</div>
+  <h2>Three things changed in 2026</h2>
+  <div class="grow">
+    <div class="cols3">
+      <div class="card"><div class="cl acc">Channel</div><h3>IBM and HPE cut to two distributors each. Resellers lose their presales desk.</h3></div>
+      <div class="card"><div class="cl acc">Technology</div><h3>Capturing a vendor catalog went from years to weeks.</h3></div>
+      <div class="card"><div class="cl acc">Category</div><h3>US resellers already pay 49k USD a year for a bespoke version.</h3></div>
+    </div>
+  </div>
+  <div class="foot"><span></span><span class="pageno"></span></div>
+</section>
+
+<section class="slide">
+  <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B383C9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D9D9D9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8ACEFE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer diamond -->
+  <path d="M 128 40 L 216 128 L 128 216 L 40 128 Z" 
+        fill="none" 
+        stroke="url(#gradient)" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Inner diamond -->
+  <path d="M 128 60 L 196 128 L 128 196 L 60 128 Z" 
+        fill="none" 
+        stroke="url(#gradient)" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Center dot -->
+  <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
+</svg><span>Oyster</span></div>
+  <div class="kicker">Business model</div>
+  <h2>Pay per configuration. Capture a vendor once, sell it to every reseller carrying that line.</h2>
+  <div class="grow">
+    <div class="cols4">
+      <div class="card stat"><div class="n">50<small>SEK / build</small></div><div class="d">A presales engineer spends 170 to 345 SEK of time on the same server</div></div>
+      <div class="card stat"><div class="n">10<small>SEK / rebuild</small></div><div class="d">Design change on the same chassis, up to three times</div></div>
+      <div class="card stat"><div class="n">~90<small>%</small></div><div class="d">Gross margin on a build; 30% on the conversation tokens</div></div>
+      <div class="card stat"><div class="n">25<small>%</small></div><div class="d">To the distributor that co-sells</div></div>
+    </div>
+    <p class="punch" style="margin-top:28px;">Sign up, two builds free, then card top-ups from 100 SEK. An engineer building two a day pays about <b>2,000 SEK a month</b>, a seat price a buyer recognises. Works in the browser, or inside Claude and ChatGPT where the customer's own subscription pays for the tokens.</p>
+  </div>
+  <div class="foot"><span></span><span class="pageno"></span></div>
+</section>
+
+<section class="slide">
+  <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B383C9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D9D9D9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8ACEFE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer diamond -->
+  <path d="M 128 40 L 216 128 L 128 216 L 40 128 Z" 
+        fill="none" 
+        stroke="url(#gradient)" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Inner diamond -->
+  <path d="M 128 60 L 196 128 L 128 196 L 60 128 Z" 
+        fill="none" 
+        stroke="url(#gradient)" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Center dot -->
+  <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
+</svg><span>Oyster</span></div>
+  <div class="kicker">Distribution</div>
   <h2>A Nordic distributor runs the pilot. A three-year contract is in negotiation, to sign before year end.</h2>
   <div class="grow">
     <div class="cols" style="grid-template-columns: 1fr 1.15fr; gap: 22px;">
@@ -407,7 +534,6 @@
   <div class="foot"><span>Non-exclusive.</span><span class="pageno"></span></div>
 </section>
 
-<!-- 6 path to 100 MUSD -->
 <section class="slide">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -455,93 +581,6 @@
   <div class="foot"><span>Active engineer = two builds a working day at 50 SEK, about 2,000 SEK a month. Europe is our estimate from headcount and channel benchmarks; US from BLS, 51,600 sales engineers in 2025.</span><span class="pageno"></span></div>
 </section>
 
-<!-- 7 why now -->
-<section class="slide">
-  <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#B383C9;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#D9D9D9;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8ACEFE;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Outer diamond -->
-  <path d="M 128 40 L 216 128 L 128 216 L 40 128 Z" 
-        fill="none" 
-        stroke="url(#gradient)" 
-        stroke-width="12" 
-        stroke-linecap="round" 
-        stroke-linejoin="round"/>
-  
-  <!-- Inner diamond -->
-  <path d="M 128 60 L 196 128 L 128 196 L 60 128 Z" 
-        fill="none" 
-        stroke="url(#gradient)" 
-        stroke-width="12" 
-        stroke-linecap="round" 
-        stroke-linejoin="round"/>
-  
-  <!-- Center dot -->
-  <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
-</svg><span>Oyster</span></div>
-  <div class="kicker">Why now</div>
-  <h2>Three things changed in 2026</h2>
-  <div class="grow">
-    <div class="cols3">
-      <div class="card"><div class="cl acc">Channel</div><h3>IBM and HPE cut to two distributors each. Resellers lose their presales desk.</h3></div>
-      <div class="card"><div class="cl acc">Technology</div><h3>Capturing a vendor catalog went from years to weeks.</h3></div>
-      <div class="card"><div class="cl acc">Category</div><h3>US resellers already pay 49k USD a year for a bespoke version.</h3></div>
-    </div>
-  </div>
-  <div class="foot"><span></span><span class="pageno"></span></div>
-</section>
-
-<!-- 8 business model -->
-<section class="slide">
-  <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#B383C9;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#D9D9D9;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8ACEFE;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Outer diamond -->
-  <path d="M 128 40 L 216 128 L 128 216 L 40 128 Z" 
-        fill="none" 
-        stroke="url(#gradient)" 
-        stroke-width="12" 
-        stroke-linecap="round" 
-        stroke-linejoin="round"/>
-  
-  <!-- Inner diamond -->
-  <path d="M 128 60 L 196 128 L 128 196 L 60 128 Z" 
-        fill="none" 
-        stroke="url(#gradient)" 
-        stroke-width="12" 
-        stroke-linecap="round" 
-        stroke-linejoin="round"/>
-  
-  <!-- Center dot -->
-  <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
-</svg><span>Oyster</span></div>
-  <div class="kicker">Business model</div>
-  <h2>Pay per configuration. Capture a vendor once, sell it to every reseller carrying that line.</h2>
-  <div class="grow">
-    <div class="cols4">
-      <div class="card stat"><div class="n">50<small>SEK / build</small></div><div class="d">A presales engineer spends 170 to 345 SEK of time on the same server</div></div>
-      <div class="card stat"><div class="n">10<small>SEK / rebuild</small></div><div class="d">Design change on the same chassis, up to three times</div></div>
-      <div class="card stat"><div class="n">~90<small>%</small></div><div class="d">Gross margin on a build; 30% on the conversation tokens</div></div>
-      <div class="card stat"><div class="n">25<small>%</small></div><div class="d">To the distributor that co-sells</div></div>
-    </div>
-    <p class="punch" style="margin-top:28px;">Sign up, two builds free, then card top-ups from 100 SEK. An engineer building two a day pays about <b>2,000 SEK a month</b>, a seat price a buyer recognises. Works in the browser, or inside Claude and ChatGPT where the customer's own subscription pays for the tokens.</p>
-  </div>
-  <div class="foot"><span></span><span class="pageno"></span></div>
-</section>
-
-<!-- 8b competition -->
 <section class="slide">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -588,7 +627,6 @@
   <div class="foot"><span></span><span class="pageno"></span></div>
 </section>
 
-<!-- 9 team -->
 <section class="slide">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -630,7 +668,6 @@
   <div class="foot"><span>Oyster AI AB, Sweden.</span><span class="pageno"></span></div>
 </section>
 
-<!-- 10 ask + upside -->
 <section class="slide">
   <div class="brand"><svg width="16" height="16" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -661,7 +698,7 @@
   <circle cx="128" cy="128" r="16" fill="url(#gradient)"/>
 </svg><span>Oyster</span></div>
   <div class="kicker">The ask</div>
-  <h2>12 MSEK to break-even. Base case worth 170 to 270 MSEK at exit.</h2>
+  <h2>12 MSEK funds 24 months to break-even. Base case worth 170 to 270 MSEK at exit.</h2>
   <div class="grow">
     <div class="cols" style="grid-template-columns: 1.15fr 1fr; gap: 22px;">
       <div class="card" style="padding-bottom:16px;">
@@ -688,7 +725,12 @@
         <div class="legend" style="margin-top:6px;"><span><i style="background:linear-gradient(135deg,#B383C9,#8ACEFE)"></i>Base</span><span><i style="background:#3F3F46"></i>Ambitious</span></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;">
-        <div class="card stat"><div class="n">Y3 Q2</div><div class="d">Break-even, about 1,000 active engineers (2 MSEK a month). No second round in the base case</div></div>
+        <div class="card"><div class="cl">What the round funds</div>
+          <ul class="check" style="margin:0;">
+            <li style="font-size:16px;margin:8px 0;"><b>Distributor contract signed</b> and selling, Q1 2027</li>
+            <li style="font-size:16px;margin:8px 0;"><b>Two more vendors live</b>, weeks each on the HPE machinery</li>
+            <li style="font-size:16px;margin:8px 0;"><b>1,000 active engineers</b>, 24 MSEK ARR: break-even Y3 Q2, no second round in the base case</li>
+          </ul></div>
         <div class="card"><div class="cl">Use of funds, 24 months</div>
           <div class="bar" style="margin:10px 0 8px"><i style="width:51%;background:#B383C9"></i><i style="width:31%;background:#8ACEFE"></i><i style="width:13%;background:#3F3F46"></i><i style="width:5%;background:#71717A"></i></div>
           <div class="legend"><span><i style="background:#B383C9"></i>Hires <b>51%</b></span><span><i style="background:#8ACEFE"></i>Founders <b>31%</b></span><span><i style="background:#3F3F46"></i>Overhead <b>13%</b></span><span><i style="background:#71717A"></i>Inference <b>5%</b></span></div>
